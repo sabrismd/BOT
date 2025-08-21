@@ -4,7 +4,7 @@ from urllib.parse import quote, unquote
 import logging
 
 # Static token (replace manually when expired)
-ACCESS_TOKEN = "eyJraWQiOiIzMjRiY2E5MC0xMzQyLTQ4YjgtOTRhOC0zOGNhNDU1OTEwODAiLCJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJhdWQiOiI2ODU4M2YxZTQ4MTFkYzAzOTk2MDQ3NzQiLCJpc3MiOiJodHRwczovL3d3dy5leHRyYXBlLmNvbSIsIm5hbWUiOiJNb2hhbW1lZCBTYWJyaSIsImV4cCI6MTc1NTEwNTgwMiwidXNlcklkIjoiNjg1ODNmMWU0ODExZGMwMzk5NjA0Nzc0IiwiaWF0IjoxNzUyNTEzODAyfQ.26itAZLJ4BH_eJ4X7TAKZx4BxNwNMyC81Op0mrCKAqT_SlPYwp8vrm8dks5WfOXWQaFt1ZB4Qqkl2pqMBPrq1A"
+ACCESS_TOKEN = "eyJraWQiOiIxNGNkZWVkOS0wZGViLTQ4ZTgtOGQ5ZS03ZGU4MzdmZWY5YTEiLCJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJhdWQiOiI2ODU4M2YxZTQ4MTFkYzAzOTk2MDQ3NzQiLCJpc3MiOiJodHRwczovL3d3dy5leHRyYXBlLmNvbSIsIm5hbWUiOiJNb2hhbW1lZCBTYWJyaSIsImV4cCI6MTc1ODM4MTE5NywidXNlcklkIjoiNjg1ODNmMWU0ODExZGMwMzk5NjA0Nzc0IiwiaWF0IjoxNzU1Nzg5MTk3fQ.cFf1VQZsFCLJqIqLwFECuUbNpdgu9FSl5x4YMaO48FmZMK_3YvoXWXVScX5FR4_0uV8NS72avQP93K3pQgpdPg"
 
 CONVERTER_API_URL = "https://www.extrape.com/handler/convertText"
 HEADERS = {
@@ -35,4 +35,5 @@ def convert_link(original_link):
     except Exception as e:
         logging.exception(f"Conversion failed for link: {original_link}")
         return None
+
 
