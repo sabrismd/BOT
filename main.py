@@ -21,9 +21,9 @@ def replace_links_in_message(text):
         updated = text
 
         for link in links:
-            if link.startswith("https://amzn.to"):
-                logging.info(f"Ignored Amazon link: {link}")
-                continue
+            # if link.startswith("https://amzn.to"):
+            #     logging.info(f"Ignored Amazon link: {link}")
+            #     continue
 
             new_link = convert_link(link)
             if new_link:
@@ -71,3 +71,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+
